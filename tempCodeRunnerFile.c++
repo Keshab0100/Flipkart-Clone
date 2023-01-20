@@ -1,2 +1,0 @@
-
- void touppers(char *ptr)
