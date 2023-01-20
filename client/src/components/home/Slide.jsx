@@ -84,7 +84,7 @@ const Slide = ({ products, title, timer }) => {
         <DealText>{title}</DealText>
         {timer && (
           <Timer>
-            <img src={timerURL} style={{ width: 24 }} />
+            <img src={timerURL} style={{ width: 24 }} alt=""/>
             <Countdown date={Date.now() + 5.04e7} renderer={renderer} />
           </Timer>
         )}

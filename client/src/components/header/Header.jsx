@@ -35,7 +35,7 @@ const header = () => {
       <StyledHeader>
         <Toolbar style={{ minHeight: 55 }}>
           <LinkTag to={`/`}>
-              <img src={logoURL} style={{ width: 75 }}></img>
+              <img src={logoURL} style={{ width: 75 }} alt=""></img>
               <Box style={{ display: "flex" }}>
                 <SubHeading>
                   Explore&nbsp;
