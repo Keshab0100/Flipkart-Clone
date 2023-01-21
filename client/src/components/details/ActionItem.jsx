@@ -5,20 +5,28 @@ import {
 import { Box, Button, styled } from "@mui/material";
 import React from "react";
 
-const LeftContainer = styled(Box)`
-  min-width: 40%;
-  padding: 40px 0px 0px 80px;
-`;
+const LeftContainer = styled(Box)(({theme})=>({
+    minWidth: '40%',
+    padding: '40px 0px 0px 80px',
+    [theme.breakpoints.down('lg')]:{
+        padding: '20px 40px'
+    }
+
+}))
 const Image = styled("img")({
   padding : "15px",
 });
 
-const StyledButton = styled(Button)`
-  width: 48%;
-  border-radius: 2px;
-  height: 50px;
-  color: #fff;
-`;
+const StyledButton = styled(Button)(({theme})=>({
+    width: '48%',
+    borderRadius: '2px',
+    height: '50px',
+    color: '#fff',
+    [theme.breakpoints.down('lg')]:{
+        width: '46%'
+    }
+}))
+
 
 export const ActionItem = ({ product }) => {
   return (

@@ -6,15 +6,14 @@ import { Link } from "react-router-dom";
 import { DataContext } from "../../context/DataProvider";
 // import { useSelector } from "react-redux";
 
-// import Profile from "./Profile";
 import LoginDialog from "../login/LoginDialog";
 import Profile from "./Profile";
 
 const Container = styled(Link)(({ theme }) => ({
   display: "flex",
-  //   [theme.breakpoints.down("sm")]: {
-  //     display: "block",
-  //   },
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+    },
 }));
 
 const Wrapper = styled(Box)(({ theme }) => ({
@@ -38,6 +37,7 @@ const Wrapper = styled(Box)(({ theme }) => ({
     display: "block",
   },
 }));
+
 
 const LoginButton = styled(Button)(({ theme }) => ({
   color: "#2874f0",
