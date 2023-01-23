@@ -16,3 +16,12 @@ export const authLogin = async (data) => {
     console.log("error while logging in", err);
   }
 };
+
+export const payUsingPaytm = async (data) => {
+  try {
+    const res = await axios.post(`${URL}/payment`, data)
+    return res.data
+  } catch (error) {
+    
+  }
+}
